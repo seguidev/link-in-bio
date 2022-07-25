@@ -36,7 +36,7 @@ main {
 main.animated {
   opacity: 0;
   filter: blur(10px);
-  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+  transition: opacity .3s ease-in-out, filter .3s ease-in-out;
 }
 
 header {
@@ -85,6 +85,14 @@ ul > li {
   border-radius: 10em;
   margin: 1.4em 0;
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+ul > li:hover {
+  box-shadow: 0 5px 0 #8156d1;
+  transform: translateY(-5px);
+}
+ul > li:active {
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  transform: translateY(5px);
 }
 
 ul > li > a {
